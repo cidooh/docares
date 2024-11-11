@@ -106,23 +106,26 @@ margin-left: 40%;
 .simply{
     display:flex;
     text-wrap: wrap;
-        background-color: var(--customcolor);
+        
     h3{
         color: var(--primarycolor);
         text-align: center;
     }
 }
 .schedule{
-     padding:20px;
-
+     padding:50px;
+box-shadow: 1px 10px 3px var(--customcolor);
+gap:10px;
+text-wrap: wrap;
 }
 
 .footerbg{
     background-color: var(--secondary);
     display:flex;
+    padding-top: 40px;
 }
 .footer{
-
+padding-top: 50px;
     input{
         width:200px;
         height:4vh;
