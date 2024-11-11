@@ -121,11 +121,11 @@ text-wrap: wrap;
 
 .footerbg{
     background-color: var(--secondary);
-    display:flex;
-    padding-top: 40px;
+       padding-top: 40px;
 }
 .footer{
 padding-top: 50px;
+display:flex;
     input{
         width:200px;
         height:4vh;
@@ -139,9 +139,11 @@ padding-top: 50px;
     gap:50px;
    }
 .links{
-
+text-align: center;
 }
 .copy{
     text-align: center;
-   
-}
+   }
+   .socialites{
+
+   }
