@@ -205,8 +205,8 @@ input{
 .file{
     .filebg{
 background:var(--secondary) ;
-height:9vh;
-width:200px;
+height:33vh;
+width:900px;
 align-items: center;
     }
 }
