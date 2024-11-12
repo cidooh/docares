@@ -56,9 +56,10 @@ a{
        background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url('/images/background-top.jpg') no-repeat center center/cover;
 text-align: center;
 height:60vh;
+align-items: center;
 h3{
-    padding-top: 4rem 1rem;
-    text-align: center;
+    padding-top: 155px;
+    align-items:center;
     font-size: 29px;
     margin-bottom: 1rem;
     /* color:white; */
