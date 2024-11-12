@@ -147,3 +147,27 @@ text-align: center;
    .socialites{
 
    }
+   .doc1{
+    display:flex;
+    p{
+        padding-top:25px;
+    }
+   }
+   .bookingbtn{
+    margin-top: 15px;
+background-color: var(--primarycolor);
+color: #fff;
+border-radius:10px;
+height: 3vh;
+box-shadow: 1px 3px var(--accentcolor);
+cursor: pointer;
+   }
+   .bookdoc{
+    display: flex;
+   }
+   .col2{
+    margin-left: 90px;;
+   }
+   .docimage{
+    margin-left: 10px;
+   }
