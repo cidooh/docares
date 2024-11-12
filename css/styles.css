@@ -23,12 +23,17 @@
     color:#fff;
     p{
         font-size: 40px;
+        align-items: center;
+        margin-top: 33px;
+       
     }
     a{
         text-decoration: none;
         color:white;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
     }
 
 }
@@ -118,36 +123,7 @@ box-shadow: 1px 10px 3px var(--customcolor);
 gap:10px;
 text-wrap: wrap;
 }
-
-.footerbg{
-    background-color: var(--secondary);
-       padding-top: 40px;
-}
-.footer{
-padding-top: 50px;
-display:flex;
-    input{
-        width:200px;
-        height:4vh;
-            }
-            button{
-                width:90px;
-                height:4vh;
-            }
-}
-.socials{
-    gap:50px;
-   }
-.links{
-text-align: center;
-}
-.copy{
-    text-align: center;
-   }
-   .socialites{
-
-   }
-   .doc1{
+  .doc1{
     display:flex;
     p{
         padding-top:25px;
@@ -171,3 +147,14 @@ cursor: pointer;
    .docimage{
     margin-left: 10px;
    }
+
+   .callus{
+
+    call{
+        align-items: center;
+        margin-left: 50%;
+    }
+       }
+ .footer{
+    background-color: var(--secondary);
+ }
