@@ -12,6 +12,10 @@
     ul{
         list-style: none;
             }
+            a{
+                text-decoration: none;
+                color:black;
+            }
     }
 
 
@@ -143,6 +147,8 @@ cursor: pointer;
    }
    .bookdoc{
     display: flex;
+    align-items: center;
+    margin-left: 29%;
    }
    .col2{
     margin-left: 90px;;
