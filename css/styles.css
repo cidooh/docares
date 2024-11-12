@@ -156,5 +156,28 @@ cursor: pointer;
     }
        }
  .footer{
+    display:flex;
     background-color: var(--secondary);
+   .socials{
+        margin-left:20%;
+    padding:20px;
+    .links{
+        text-align: center;
+     
+    }
+    }
+    .join{
+        padding: 20px;
+              a{
+            color:black;
+            text-decoration: none;
+            
+        }
+    }
  }
+.copy{
+    margin-top: 35px;
+}
+.policy{
+    margin-left: 40%;
+}
