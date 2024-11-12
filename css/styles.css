@@ -179,6 +179,7 @@ cursor: pointer;
     }
     .join{
         padding: 20px;
+        margin-left: 40%;
               a{
             color:black;
             text-decoration: none;
@@ -199,4 +200,13 @@ input{
     color:var(--accentcolor);
     height:4vh;
     border-radius:9px;
+}
+/* consult */
+.file{
+    .filebg{
+background:var(--secondary) ;
+height:9vh;
+width:200px;
+align-items: center;
+    }
 }
