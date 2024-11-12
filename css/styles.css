@@ -158,6 +158,8 @@ cursor: pointer;
  .footer{
     display:flex;
     background-color: var(--secondary);
+    padding-top:20px;
+    margin-top:19px;
    .socials{
         margin-left:20%;
     padding:20px;
@@ -180,4 +182,12 @@ cursor: pointer;
 }
 .policy{
     margin-left: 40%;
+}
+input{
+    height:4vh;
+}
+.subbtn{
+    color:var(--accentcolor);
+    height:4vh;
+    border-radius:9px;
 }
