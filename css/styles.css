@@ -48,7 +48,8 @@ a{
     text-decoration: none;
     margin-left:5%;
     color:black;
-}
+    text-align: center;
+    }
 }
 .hero{
        background-size: 990px;
@@ -69,6 +70,7 @@ h3{
         width:230px;
         height:5vh;
         border-radius: 5px;
+        transition:0.8s;
             }
             button{
                 width:90px;
@@ -135,7 +137,7 @@ background-color: var(--primarycolor);
 color: #fff;
 border-radius:10px;
 height: 3vh;
-box-shadow: 1px 3px var(--accentcolor);
+box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 cursor: pointer;
    }
    .bookdoc{
