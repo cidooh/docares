@@ -97,11 +97,39 @@ h3{
     margin-top:2%;
     .quize2{
 margin-left: 5%;
-
+}
     }
+    .quize2 i{
+        /* position: absolute; */
+        right :5px ;
+        top: 10px;
+        visibility:hidden;
+          }
+         .quize2 p{
+            color:red;
+            visibility: hidden;
+        }
 input{
     width:150px;
     height:4vh;
+}
+.success input{
+    border: 3px green solid;
+}
+.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+.error i.fa-circle-exclamation{
+    visibility:visible;
+    color:red;
+}
+.error p{
+    visibility:visible;
+}
+
+.error input{
+    border: 3px red solid;
 }
 button{
     background-color: var(--primarycolor);
@@ -109,8 +137,10 @@ button{
     border-radius:7px;
     width:90px;
     height:3vh;
+    text-transform: uppercase;
+    border-color: var(--primarycolor);
 }
-}
+
 
 .why{
     margin-top: 3%;
