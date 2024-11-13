@@ -44,10 +44,15 @@
       <div class="col1">
         <div class="doc1">
           <p>
-            Dr. Wichan Kanchanatawan<br />
+            Dr. Mbuvi Kiharu<br />
             Orthopaedics, Orthopaedics - Sports Medicine ,<br />
             Orthopaedics - Trauma<br />
-            <button class="bookingbtn" onclick="openBookingModal('Dr. Wichan Kanchanatawan')">Book Appointment</button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Dr. Mbuvi Kiharu')"
+            >
+              Book Appointment
+            </button>
           </p>
 
           <div>
@@ -61,11 +66,16 @@
 
         <div class="doc1">
           <p>
-            Dr. Sombat Srisuwanporn<br />
+            Dr. Mwangi Mutuse<br />
             Ophthalmology, Ophthalmology - <br />
             Cataract , Ophthalmology -<br />
             Refractive Surgery <br />
-           <button class="bookingbtn" onclick="openBookingModal('Dr. Sombat Srisuwanporn')">Book Appointment</button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Dr. Mwangi Mutuse')"
+            >
+              Book Appointment
+            </button>
           </p>
           <div>
             <img
@@ -78,10 +88,15 @@
 
         <div class="doc1">
           <p>
-            Prof.Dr. Yuen Tannirandorn<br />
+            Prof.Dr. Yuen Fat<br />
             OB/GYN, OB/GYN - Maternal & <br />
             Fetal Medicine<br />
-           <button class="bookingbtn" onclick="openBookingModal('Prof.Dr. Yuen Tannirandorn')">Book Appointment</button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Prof.Dr. Yuen Fat')"
+            >
+              Book Appointment
+            </button>
           </p>
           <div>
             <img
@@ -94,10 +109,15 @@
 
         <div class="doc1">
           <p>
-            Dr. Pongserath Sirichindakul<br />
+            Dr. William Malcoln<br />
             Surgery - General Surgery<br />
             Orthopaedics - Trauma <br />
-           <button class="bookingbtn" onclick="openBookingModal('Dr. Pongserath Sirichindakul')">Book Appointment</button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Dr. William Malcoln')"
+            >
+              Book Appointment
+            </button>
           </p>
           <div>
             <img
@@ -112,9 +132,14 @@
       <div class="col2">
         <div class="doc1">
           <p>
-            Dr. Pongserath Sirichindakul<br />
+            Dr. Gordon <br />
             Surgery - General Surgery<br />
-           <button class="bookingbtn" onclick="openBookingModal('Dr. Pongserath Sirichindakul')">Book Appointment</button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Dr. Gordon')"
+            >
+              Book Appointment
+            </button>
           </p>
           <div>
             <img
@@ -127,10 +152,15 @@
 
         <div class="doc1">
           <p>
-            Prof.Dr. Yuen Tannirandorn<br />
+            Prof.Dr. Chui Suluhu<br />
             OB/GYN, OB/GYN - Maternal &<br />
             Fetal Medicine<br />
-            <button class="bookingbtn" onclick="openBookingModal('Prof.Dr. Yuen Tannirandorn')">Book Appointment</button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Prof.Dr. Chui Suluhu')"
+            >
+              Book Appointment
+            </button>
           </p>
           <div>
             <img
@@ -143,10 +173,15 @@
 
         <div class="doc1">
           <p>
-            Dr. Pongserath Sirichindakul<br />
+            Dr. Kobe Curry<br />
             Surgery - General Surgery<br />
 
-          <button class="bookingbtn" onclick="openBookingModal('Dr. Pongserath Sirichindakul')">Book Appointment </button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Dr. Kobe Curry')"
+            >
+              Book Appointment
+            </button>
           </p>
           <div>
             <img
@@ -159,10 +194,15 @@
 
         <div class="doc1">
           <p>
-            Prof.Dr. Yuen Tannirandorn<br />
+            Prof.Dr. Amerix Chlondoe<br />
             OB/GYN, OB/GYN - Maternal & <br />
             Fetal Medicine <br />
-            <button class="bookingbtn" onclick="openBookingModal('Dr. Yuen Tannirandorn')">Book Appointment</button>
+            <button
+              class="bookingbtn"
+              onclick="openBookingModal('Dr.Amerix Chlondoe')"
+            >
+              Book Appointment
+            </button>
           </p>
           <div>
             <img
@@ -227,57 +267,58 @@
         <form id="bookingForm">
           <label for="doctor">Doctor:</label>
           <input type="text" id="doctor" readonly />
-    
+
           <label for="date">Choose a Date:</label>
           <input type="date" id="date" required />
-    
+
           <label for="time">Choose a Time:</label>
           <input type="time" id="time" required />
-    
-          <button type="button" onclick="bookAppointment()">Confirm Booking</button>
+
+          <button
+            type="button"
+            class="confirmbooking"
+            onclick="bookAppointment()"
+          >
+            Confirm Booking
+          </button>
         </form>
         <div id="confirmation"></div>
       </div>
     </div>
 
-        
     <script>
-      // Open modal and populate doctor name
       function openBookingModal(doctorName) {
-          document.getElementById('doctor').value = doctorName;
-          document.getElementById('bookingModal').style.display = "block";
+        document.getElementById("doctor").value = doctorName;
+        document.getElementById("bookingModal").style.display = "block";
       }
 
-      // Close modal
-      document.querySelector(".close").onclick = function() {
-          document.getElementById('bookingModal').style.display = "none";
+      document.querySelector(".close").onclick = function () {
+        document.getElementById("bookingModal").style.display = "none";
       };
 
-      // Function to handle booking
       function bookAppointment() {
-          const doctor = document.getElementById('doctor').value;
-          const date = document.getElementById('date').value;
-          const time = document.getElementById('time').value;
+        const doctor = document.getElementById("doctor").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
 
-          if (doctor && date && time) {
-              // Temporarily store appointment details
-              localStorage.setItem('appointment', JSON.stringify({ doctor, date, time }));
+        if (doctor && date && time) {
+          localStorage.setItem(
+            "appointment",
+            JSON.stringify({ doctor, date, time })
+          );
 
-              // Display confirmation message
-              document.getElementById('confirmation').innerText = `Appointment booked with ${doctor} on ${date} at ${time}.`;
-              
-              // Hide modal after confirmation
-              setTimeout(() => {
-                  document.getElementById('bookingModal').style.display = "none";
-                  document.getElementById('confirmation').innerText = "";
-              }, 3000);
-          } else {
-              alert("Please fill in all fields");
-          }
+          document.getElementById(
+            "confirmation"
+          ).innerText = `Appointment booked with ${doctor} on ${date} at ${time}.`;
+
+          setTimeout(() => {
+            document.getElementById("bookingModal").style.display = "none";
+            document.getElementById("confirmation").innerText = "";
+          }, 10000);
+        } else {
+          alert("Please fill in all fields");
+        }
       }
     </script>
-  </body>
-</html>
-
   </body>
 </html>

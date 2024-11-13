@@ -341,11 +341,25 @@ i{
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 400px;
+    max-width: 700px;
+    height: 50vh;
 }
+.confirmbooking{
+    height: 4vh;
+    width: 130px;
+    margin: 14%;
+}
+#time{
+    margin-top: 20px;
+    width: 200px;
+}
+#doctor{
+    width: 200px;
+}
+
 
 .close {
     color: #aaa;
@@ -359,6 +373,9 @@ i{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+#bookingForm{
+padding: 25px;
 }
 
 
