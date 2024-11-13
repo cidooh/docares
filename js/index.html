@@ -15,27 +15,31 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="/js/index.html"
-        ><img
-          class="nav-image"
+      <a href="/js/index.html"><img class="nav-image"
           src="../images/docare-high-resolution-logo.svg"
           alt="doc icon"
-          width="200px"
-      /></a>
+          width="200px"/></a>
       <p>DOCARES</p>
-
-      <a href="/finddoc.html">Find Doctors</a>
-      <a href="/freeconsultation.html">Book Free Consultation</a>
+<ul class="nav-menu">
+     <li class="nav-item" class="nav-link"> <a href="/finddoc.html">Find Doctors</a></li>
+     <li class="nav-item" class="nav-link"> <a href="/freeconsultation.html">Book Free Consultation</a></li>
+    </ul>
+    <div class="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+    </div>
     </nav>
 
     <div class="navbar2">
-      <a href="#"
+      <a href="/freeconsultation.html"
         ><img
           src="../images/appointmnet-icon.svg"
           alt="appointment"
           width="30px"
         />Book Appointment</a
       >
+      
     </div>
 
     <div class="hero">
@@ -55,12 +59,13 @@
           rows="10"
           cols="50"
         ></textarea>
-        <input type="email" placeholder="Add email" id="email-info" />
+        <input type="email" placeholder="Add email" id="email-info" /> 
         <button type="submit">Submit</button>
-
-        <p>Error message</p>
-        <i class="fa-regular fa-circle-check"></i>
         <i class="fa-solid fa-circle-exclamation"></i>
+          <!-- <i class="fa-regular fa-circle-check"></i> -->
+        <p>Error message</p>
+      
+      
       </form>
       </div>
     </div>

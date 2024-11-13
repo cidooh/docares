@@ -2,6 +2,19 @@
 
 const form = document.querySelector('#enter-message')
 const emailInfo = document.querySelector('#email-info')
+const hamburger = document.querySelector('.hamburger')
+const navMenu = document.querySelector('nav-menu')
+
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", () =>{
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+}))
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -11,13 +24,14 @@ form.addEventListener('submit', (event) => {
 
 function validateForm(){
     if(emailInfo.value.trim() == '')
-    setError(emailInfo, 'Provide email address' );
+    setError(emailInfo, 'Provide email address' )
 }
-// else if(isEmailValid(emailInfo.value)){
-//     setSuccess(emailInput)
-// }else{
-//     setError(emailInput, 'provide valid email address')
-// }
+ if(isEmailValid(emailInfo.value)){
+    setSuccess(emailInput)
+}
+else{
+    setError(emailInput, 'provide valid email address')
+}
 
  function setError(element, errorMessage){
 const parent = element.parentElement;

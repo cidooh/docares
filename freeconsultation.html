@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Consultation</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav class="navbar">
-        <a href="/js/index.html"><img
-          class="nav-image"
-          src="../images/docare-high-resolution-logo.svg"
-          alt="doc icon"
-          width="200px"
-        /></a>
+        <a href="/js/index.html"><img class="nav-image"
+            src="../images/docare-high-resolution-logo.svg"
+            alt="doc icon"
+            width="200px"/></a>
         <p>DOCARES</p>
-        <a href="finddoc.html">Find Doctors</a>
-        <a href="freeconsultation.html">Book Free Consultation</a>
+  <ul class="nav-menu">
+       <li class="nav-item" class="nav-link"> <a href="/finddoc.html">Find Doctors</a></li>
+       <li class="nav-item" class="nav-link"> <a href="/freeconsultation.html">Book Free Consultation</a></li>
+      </ul>
+      <div class="hamburger">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+      </div>
       </nav>
       <hr />
       <div class="freeconsult">
@@ -46,11 +52,15 @@
     </select>
 </div>
 </div>
-<div >
-<input type="text" placeholder="Enter email">
-<button class="filebtn">Submit</button>
+
+<div class="filess" id="consult-free">
+<input type="email" placeholder="Enter email" id="consult-email">  <i class="fa-solid fa-circle-exclamation"></i>
+<button type="submit" class="filebtn">Submit</button>
+<i class="fa-regular fa-circle-check"></i>
 <script src="/booking.js"></script>
+<p>Error message</p>
 </div>
+
 </div>
 </body>
 </html>
