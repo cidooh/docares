@@ -17,7 +17,9 @@
                 color:black;
             }
     }
-
+body{
+    font-family: Arial, sans-serif
+}
 
 
 .navbar{
@@ -359,9 +361,8 @@ i{
         left:0;
     }
 
-
   
-    /* Hero adjustments */
+    
     .hero h3 {
       font-size: 18px;
     }
@@ -370,7 +371,7 @@ i{
       font-size: 12px;
     }
   
-    /* Schedule section */
+   
     .schedule h3 {
       font-size: 15px;
       text-wrap: wrap;
@@ -380,10 +381,32 @@ i{
       font-size: 12px;
     }
   
-    /* Footer adjustments */
+    
     .footer, .socials, .policy {
       flex-direction: column;
       text-align: center;
       gap: 10px;
     }
   }
+
+  /* media query for doctors */
+
+@media (min-width: 1024px) {
+    .bookdoc {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  
+    .nav-menu {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: none; 
+    }
+  
+    .footer {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  
