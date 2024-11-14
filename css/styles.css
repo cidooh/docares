@@ -621,12 +621,17 @@ button:hover {
           transition:0.3s;
     }
     .freeconsult{
-        font-size: 14px;
-        margin: auto;
-        align-items: center;
+        font-size: 17px;
+        /* margin: auto; */
+        /* align-items: center; */
         width: 100px;
-        .file{
-            text-wrap: wrap;
+        .filebg{
+            /* text-wrap: wrap; */
+            width:100%;
         }
     }
 }
+select{
+    width:100%;
+    }
+  
