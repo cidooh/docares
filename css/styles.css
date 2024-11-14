@@ -554,7 +554,14 @@ button:hover {
     .schedule p {
       font-size: 12px;
     }
-  
+  .simply{
+        left: -100%;
+        top:70px;
+        gap:0;
+        flex-direction:column;
+        width: 100%;
+        text-align: center;
+  }
     
     .footer, .socials, .policy {
       flex-direction: column;
@@ -565,13 +572,28 @@ button:hover {
 
   /* media query for doctors */
 
-@media (min-width: 1024px) {
+@media (max-width: 412px) {
     .bookdoc {
       grid-template-columns: repeat(3, 1fr); 
+       left: -100%;
+        top:70px;
+         flex-direction:column;
+        width: 100%;
+        text-align: center;
+        margin: auto;
     }
   
     .nav-menu {
       display: flex;
+       position: fixed;
+        left: -100%;
+        top:70px;
+        gap:0;
+        flex-direction:column;
+        background-color: var(--primarycolor);
+        width: 100%;
+        text-align: center;
+        transition:0.3s;
     }
   
     .hamburger {
@@ -584,3 +606,29 @@ button:hover {
     }
   }
   
+/* media queries for consultation */
+
+@media (max-width:412px) {
+    .nav-menu {
+        display: flex;
+         position: fixed;
+          left: -100%;
+          top:70px;
+          gap:0;
+          flex-direction:column;
+          background-color: var(--primarycolor);
+          width: 100%;
+          text-align: center;
+          transition:0.3s;
+    }
+    .freeconsult{
+        font-size: 14px;
+        margin: auto;
+        align-items: center;
+        width: 100px;
+        .file{
+            text-wrap: wrap;
+            
+        }
+    }
+}
