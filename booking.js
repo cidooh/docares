@@ -25,30 +25,30 @@ function openBookingModal(doctorName) {
     document.getElementById('bookingModal').style.display = "block";
 }
 
-// Close modal
+
 document.querySelector(".close").onclick = function() {
     document.getElementById('bookingModal').style.display = "none";
 };
 
-// Function to handle booking
+
 function bookAppointment() {
     const doctor = document.getElementById('doctor').value;
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
 
     if (doctor && date && time) {
-        // Temporarily store appointment details
+        
         localStorage.setItem('appointment', JSON.stringify({ doctor, date, time }));
 
-        // Display confirmation message
+       
         document.getElementById('confirmation').innerText = `Appointment booked with ${doctor} on ${date} at ${time}.`;
         
-        // Hide modal after confirmation
+        
         setTimeout(() => {
             document.getElementById('bookingModal').style.display = "none";
             document.getElementById('confirmation').innerText = "";
-        }, 3000);
+        }, 4000);
     } else {
-        alert("Please fill in all fields");
+        showMessage ("Please fill in all fields" );
     }
 }

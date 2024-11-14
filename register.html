@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Join Us</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/js/index.html"><img class="nav-image"
+            src="../images/docare-high-resolution-logo.svg"
+            alt="doc icon"
+            width="200px"/></a>
+        <p>DOCARES</p>
+  <ul class="nav-menu">
+       <li class="nav-item" class="nav-link"> <a href="/finddoc.html">Find Doctors</a></li>
+       <li class="nav-item" class="nav-link"> <a href="/freeconsultation.html">Book Free Consultation</a></li>
+      </ul>
+      <div class="hamburger">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+      </div>
+      </nav>
+  
+    
+    <div class="register-body">
+    <div class="register-container">
+        <h1>Join Our Team</h1>
+        <p>Become a part of our community by registering below.</p>
+
+        <form id="registerForm">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g John Doe">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="e.g johndoe2@gmail.com">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="must be 8 characters long, include a number and a simbol" required >  
+          
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="button" onclick="registerUser()">Register</button>
+            <div id="registrationMessage"></div>
+        </form>
+    </div>
+</div>
+    <script>
+     
+function registerUser() {
+    const fullname = document.getElementById('fullname').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    
+
+    
+    const registrationMessage = document.getElementById('registrationMessage');
+    registrationMessage.innerText = '';
+
+    
+    if (!fullname.trim())  {
+        showMessage('Full Name is required.', 'red');
+        return;
+    }
+
+    
+    if (!validateEmail(email)) {
+        showMessage('Email address is required.', 'red');
+        return;
+    }
+
+
+    if (!isPasswordStrong(password)) {
+        showMessage('Password must be at least 8 characters long, include a number and a special character.', 'red');
+        return;
+    }
+
+    
+    if (password !== confirmPassword) {
+        showMessage('Passwords do not match.', 'red');
+        return;
+    }
+
+   
+    localStorage.setItem('user', JSON.stringify({ fullname, email, password }));
+
+   
+    showMessage('Registration successful!', 'green');
+
+    
+    document.getElementById('registerForm').reset();
+}
+
+
+function showMessage(message, color) {
+    const registrationMessage = document.getElementById('registrationMessage');
+    registrationMessage.innerText = message;
+    registrationMessage.style.color = color;
+}
+
+
+function validateEmail(email) {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return regex.test(email);
+}
+
+function isPasswordStrong(password) {
+    const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return regex.test(password);
+}
+
+    </script>
+</body>
+</html>
