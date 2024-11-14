@@ -336,7 +336,7 @@ i{
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
-}
+    }
 
 .modal-content {
     background-color: #fefefe;
@@ -346,20 +346,26 @@ i{
     width: 80%;
     max-width: 700px;
     height: 50vh;
+    background:linear-gradient(rgba(200,200,200,0.5),rgba(100, 172, 255, 0.5)),url('/images/docare-high-resolution-logo.svg') no-repeat center center/cover;
 }
 .confirmbooking{
     height: 4vh;
     width: 130px;
-    margin: 14%;
+    margin: 11%;
+    box-shadow: 0.5px 2px blue 2px 1px var(--secondary);
 }
 #time{
     margin-top: 20px;
     width: 200px;
-}
+   }
 #doctor{
     width: 200px;
 }
-
+#confirmation{
+    background:var(--secondary);
+    width: 500px;
+    
+}
 
 .close {
     color: #aaa;
