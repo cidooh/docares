@@ -46,8 +46,9 @@
       <p style="background-image: url('./images/background-top.jpg')"></p>
       <h3>Stay at Home.Consult Doctors Online</h3>
       <div class="input">
-        <input type="text" placeholder="Search for any health keyword" />
+        <input type="text" id="input-box" placeholder="Search for any health keyword" autocomplete="off"/>
         <button>Search</button>
+        <div class="result-box"></div>
       </div>
     </div>
 
@@ -60,7 +61,7 @@
           cols="50"
          id="text-area"></textarea>
         <input type="email" placeholder="Add email" id="email-info" /> 
-        <button type="submit" >Submit</button>
+        <button type="submit">Submit</button>
         <i class="fa-solid fa-circle-exclamation"></i>
           <!-- <i class="fa-regular fa-circle-check"></i> -->
         <p>Error message</p>
@@ -102,7 +103,7 @@
       <div class="schedule">
         <h3>DOCARES QMM-TOKEN</h3>
         <p>
-          Improve outpatient (OP) flow at Hospitals & clinics with BOOKNMEET's
+          Improve outpatient (OP) flow at Hospitals & clinics with DOCARE's
           QMM (Queue Management Module). Seamless queue management that works
           with online appointments, clinic phone-in appointments & walk-in
           appointments. SMS notification and reminder to maintain the patient

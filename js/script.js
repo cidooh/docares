@@ -3,6 +3,33 @@ const textArea = document.querySelector("#text-area");
 const emailInfo = document.querySelector("#email-info");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+let availableKeywords = [
+    'stomachache',
+   'Pain in the joints',
+   'Right medicine for rushes'
+]
+const resultsBox = document.querySelector(".result-box")
+const inputBox = document.getElementById("input-box")
+
+inputBox.onkeyup = function(){
+    let result =[]
+    let input = inputBox.value
+    if(input.length){
+        result = availableKeywords.filter((keyword) =>{
+       return keyword.toLowerCase().includes(input.tolowerCase)
+        })
+        console.log(result)
+    }
+    display(result)
+}
+
+function display(result){
+const content = result.map((list)=>{
+    return "<li>" + list + "</li>"
+})
+resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>"
+}
+
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");

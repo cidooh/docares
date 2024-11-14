@@ -560,8 +560,8 @@ button:hover {
         flex-direction:column;
         width: 100%;
         text-align: center;
-  }
-    
+          }
+            
     .footer, .socials, .policy {
       flex-direction: column;
       text-align: center;
