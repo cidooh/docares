@@ -24,21 +24,22 @@ form.addEventListener('submit', (event) => {
 
     validateForm();
 })
-
-function validateForm(){
-    if(emailInfo.value.trim() == '')
-    setError(emailInfo, 'Provide email address')
+function validateForm() {
+       if (emailInfo.value.trim() == '') {
+        setError(emailInfo, 'Provide email address')
+    } 
+   
+    else if (isEmailValid(emailInfo.value)) {
+        setSuccess(emailInfo)
+    } 
+   
+    else {
+        setError(emailInfo, 'Provide a valid email address')
+    }
+      if (textArea.value.trim() == '') {
+        setError(textArea, 'Add your message')
+    }
 }
- if(isEmailValid(emailInfo.value)){
-    setSuccess(emailInput)
-}
-else{
-    setError(emailInput, 'provide valid email address')
-}
-if(textArea.value.trim() == ''){
-    setError(textArea, 'add your message')
-}
-
 
  function setError(element, errorMessage){
 const parent = element.parentElement;
@@ -60,7 +61,6 @@ function setSuccess(element){
 
 function isEmailValid(email){
     const reg =(/^[A-Za-z\._\-0-9]*[@][A_Za-z]*[\.][a-z]{2,4}$/)
-
 
     return reg.test(email)
 }

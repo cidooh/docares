@@ -261,7 +261,6 @@ input{
     height:4vh;
     border-radius:9px;
 }
-/* consult */
 .file{
     .filebg{
 background:var(--secondary) ;
@@ -395,7 +394,7 @@ i{
 #bookingForm{
 padding: 25px;
 }
-/* Reset some default browser styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -495,7 +494,7 @@ button:hover {
 
 
 
-@media (max-width: 412px) {
+@media (max-width: 920px) {
     /* Navbar adjustments */
     .navbar, .navbar2 {
       flex-direction: column;
@@ -503,7 +502,7 @@ button:hover {
       gap: 5px;
     }
     .hamburger{
-        display:block;
+        display:flex;
     }
     .navbar img {
       width: 150px;
@@ -572,7 +571,7 @@ button:hover {
 
   /* media query for doctors */
 
-@media (max-width: 412px) {
+@media (max-width: 920px) {
     .bookdoc {
       grid-template-columns: repeat(3, 1fr); 
        left: -100%;
@@ -608,7 +607,7 @@ button:hover {
   
 /* media queries for consultation */
 
-@media (max-width:412px) {
+@media (max-width:920px) {
     .nav-menu {
         display: flex;
          position: fixed;
