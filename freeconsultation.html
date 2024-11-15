@@ -1,66 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Consultation</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="./index.html"><img class="nav-image"
-            src="./images/docare-high-resolution-logo.svg"
-            alt="doc icon"
-            width="200px"/></a>
-        <p>DOCARES</p>
-  <ul class="nav-menu">
-       <li class="nav-item" class="nav-link"> <a href="./finddoc.html">Find Doctors</a></li>
-       <li class="nav-item" class="nav-link"> <a href="./freeconsultation.html">Book Free Consultation</a></li>
+      <a href="./index.html"
+        ><img
+          class="nav-image"
+          src="./images/docare-high-resolution-logo.svg"
+          alt="doc icon"
+          width="200px"
+      /></a>
+      <p>DOCARES</p>
+      <ul class="nav-menu">
+        <li class="nav-item" class="nav-link">
+          <a href="./finddoc.html">Find Doctors</a>
+        </li>
+        <li class="nav-item" class="nav-link">
+          <a href="./freeconsultation.html">Book Free Consultation</a>
+        </li>
       </ul>
       <div class="hamburger">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      </nav>
-      <hr />
-      <div class="freeconsult">
-<div class="file">
-    <h4>What is your condition or treatment needed?</h4>
-    <p>If you have Radiology files, MRI, CT (in DICOM), please upload them to a cloud storage and share the links with us.</p>
-    <div class="filebg">
-        <img src="./images/Screenshot from 2024-11-07 20-58-17.png" alt="">
-<input type="file" class="input-file">
+    </nav>
+    <hr />
+    <div class="freeconsult">
+      <div class="file">
+        <h4>What is your condition or treatment needed?</h4>
+        <p>
+          If you have Radiology files, MRI, CT (in DICOM), please upload them to
+          a cloud storage and share the links with us.
+        </p>
+        <div class="filebg">
+          <img src="./images/Screenshot from 2024-11-07 20-58-17.png" alt="" />
+          <input type="file" class="input-file" />
+        </div>
+      </div>
+
+      <div class="options">
+        <div>
+          <p>Would you like us to recommend a doctor?</p>
+          <select class="select">
+            <option selected>Yes, recommend a doctor for me</option>
+            <option>No, I will choose my doctor</option>
+          </select>
+        </div>
+
+        <div>
+          <p>When would you like to book this appointment for?</p>
+          <select class="select">
+            <option>Earliest available</option>
+            <option>Choose a preffered date and time</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filess" id="consult-free">
+        <input type="email" placeholder="Enter email" id="consult-email" />
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <button type="submit" class="filebtn">Submit</button>
+        <i class="fa-regular fa-circle-check"></i>
+        <script src="./js/booking.js"></script>
+        <p>Error message</p>
+      </div>
     </div>
-</div>
-
-<div class="options">
-    <div>
-    <p>Would you like us to recommend a doctor?</p>
-    <select class="select">
-        <option selected>Yes, recommend a doctor for me</option>
-        <option>No, I will choose my doctor</option>
-    </select>
-</div>
-
-<div>
-    <p>When would you like to book this appointment for?</p>
-    <select>
-        <option>Earliest available</option>
-        <option>Choose a preffered date and time</option>
-    </select>
-</div>
-</div>
-
-<div class="filess" id="consult-free">
-<input type="email" placeholder="Enter email" id="consult-email">  <i class="fa-solid fa-circle-exclamation"></i>
-<button type="submit" class="filebtn">Submit</button>
-<i class="fa-regular fa-circle-check"></i>
-<script src="./js/booking.js"></script>
-<p>Error message</p>
-</div>
-
-</div>
-</body>
+  </body>
 </html>
